@@ -14,6 +14,7 @@ CRIMINAL_API_KEY = "${CRIMINALIP_API_KEY}"
 
 
 # Constants
+target_prefix = 'https://www.exploit-db.com/download/'
 CIP_BASE_URL = "https://api.criminalip.io/"
 TENABLE_BASE_URL = 'https://cloud.tenable.com/'
 FILE_PATH = "${download_file_path}ip_list.txt"
@@ -45,7 +46,5 @@ current_date = datetime.now()
 one_month_ago = current_date - timedelta(days=30)
 
 #target
-target_prefix = 'https://www.exploit-db.com/download/'
-score_mapping = {1:'Safe',2:'Low',3:'Moderate',4:'Dangerous',5:'Critical'}
 keys_to_extract = ['ETH', 'BTC', 'docfile', 'zip', 'url', 'exefile', 'email', 'sha256', 'md5', 'XMR', 'darkweb']
 value_order = ['inbound/outbound', 'abuse', 'ids', 'url', 'sha', 'md5', 'email']
