@@ -27,10 +27,8 @@ class ProcessFlow():
         systemtype = "general-purpose"
         ssh_fingerprints = "Unknown"
         
-        out_score_int = ip_data_json_result['score']['outbound']
-        out_score = score_mapping[out_score_int]
-        in_score_int = ip_data_json_result['score']['outbound']    
-        in_score = score_mapping[in_score_int]
+        out_score = ip_data_json_result['score']['outbound']
+        in_score = ip_data_json_result['score']['outbound']    
         os_data.append(f"Inbound({in_score})/Outbound({out_score})")
         
         ipv4 = ip_data_json_result['ip']
