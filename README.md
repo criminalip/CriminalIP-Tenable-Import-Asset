@@ -39,7 +39,7 @@ pip install pytenable
 
 download file command
 ```shell
-git clone https://github.com/criminalip/Tenable_import_CIP.git
+git clone https://github.com/criminalip/CriminalIP-Tenable-Import-Asset.git
 ```
 
 # 2. Description
